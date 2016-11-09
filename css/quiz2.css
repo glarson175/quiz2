@@ -4,9 +4,16 @@
  - set up the document to use ems or rems based off of a 62.5% root font size
  - a transition that moves the <p> tags over a few pixels when you hover over them (and back when you aren't hovering)*/
 
-html, bdy {
+html, body {
 	font-family: Helvetica, Arial, sans-serif;
 	background: #eeee;
+	font-size: 62.5%;
+	
+}
+body{
+	font-size:1.7rem;
+	background-size:100%;    
+	background-repeat:no-repeat;/* <------ */
 }
 
 p {
@@ -25,3 +32,57 @@ ul {
 ul {
 	list-style: none;
 }
+section:hover{
+		background-color:yellow;
+}
+section{
+	border: 10px solid black;
+}
+p:hover{
+	position: relative; 
+  right: -10px;
+}
+.button{
+	width:100px;
+	height:30px;
+	background-color:blue;
+	border-radius:10px;
+	text-align:center;
+	padding:3px 3px 3px 3px;
+	border: 3px solid black;
+}
+div.button:hover{
+	background-color:yellow;
+}
+
+ .accordion {
+    overflow:hidden;
+    border-radius:3px;
+}
+ 
+.accordion-section-title {
+    width:100%;
+
+    display:inline-block;
+    transition:all linear 0.15s;
+    font-size:1.2em;
+}
+ 
+.accordion-section-title.active, .accordion-section-title:hover {
+    color:blue;
+		font-style: italic;
+    text-decoration:underline;
+}
+ 
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+ 
+/*----- Section Content -----*/
+.accordion-section-content {
+    display:none;
+		background:white;
+		border:2px solid blue;
+}
+
+

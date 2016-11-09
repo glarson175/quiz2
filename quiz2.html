@@ -2,40 +2,74 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-400000">
-	
+	<link rel="stylesheet" href="./css/quiz2.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
-<body>
-	<h1>Welcome To The Wonderful World of Debugging Code</h1>
+	<body>
+		<h1>Welcome To The Wonderful World of Debugging Code</h1>
+		<div class="messagesent">
+			<p>
+				DONT FORGET TO CLICK ON HAPPY :)!!!!!
+			</p>
+		</div>
+		<section id="mainSection">
+			<p>This is a paragraph, I promise.</p?>
 
-	<section id="mainSection">
-		<p>This is a paragraph, I promise.</p
-
-		<ul class="links">
-			<li>
-				<a>Link 1<a>
-			</li>
-			<li>
-				<a href="#">Link 2</a>
-			</li>
-			<li>
-				<a href="#">Link 487
-			</li>
-		</ul>
-	
-
-	<p>I am a lonely paragraph, with no immediate parent.</p>
-
-	<section id=secondarySection>
-		<p>Woop woop!!!</p>
-		<p>See how elegantly we're spaced out?</p>
-		<p>Yeah, we're spaced out alright.<//p>
+			<div class="accordion">
+			<ul class="links">
+				<li>
+					<div class="accordion-section">
+						<a class="accordion-section-title" href="#accordion-1">Link 1</a>
+							<div id="accordion-1" class="accordion-section-content">
+								<p> text for link 1 </p>
+							</div><!--end .accordion-section-content-->
+					</div><!--end .accordion-section-->
+				</li>
+				<li>
+					<div class="accordion-section">
+						<a class="accordion-section-title" href="#accordion-2">Link 2</a>
+							<div id="accordion-2" class="accordion-section-content">
+								<p>text for link 2</p>
+							</div><!--end .accordion-section-content-->
+					</div><!--end .accordion-section-->
+					
+				</li>
+				<li>
+					<div class="accordion-section">
+						<a class="accordion-section-title" href="#accordion-3">Link 487</a>
+							<div id="accordion-3" class="accordion-section-content">
+								<p> random filler text for link 487</p>
+							</div><!--end .accordion-section-content-->
+					</div><!--end .accordion-section-->
+				</li>
+			</ul>
+			
+			
+		</div><!--end .accordion-->
+			
+		</section>
 		
-		<ol>
-			<li>I'm like an unordered list</li>	
-			<li>But I'm more orderly<li>
-			<li>That was a really bad joke.</li>
-		<ol>
-	</section>
-	
-</body>
-</hmtl>
+		<p id="lonely">I am a lonely paragraph, with no immediate parent.</p>
+
+		<section id="secondarySection">
+			<p>Woop woop!!!</p>
+			<p>See how elegantly we're spaced out?</p>
+			<p>Yeah, we're spaced out alright.</p>
+			
+			<ol id="ol">
+				<li>I'm like an unordered list</li>	
+				<li>But I'm more orderly</li>
+				<li>That was a really bad joke.</li>
+			</ol>
+		</section>
+			<div class="button" id="clear" onclick="fadeOutHtml()">Click me</div>
+			
+			<div class="button" id="happy" onclick="Happy()">Happy :)</div>
+		<footer>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+			<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+			<script src="js/quiz2.js" type="text/javascript"></script>
+		</footer>
+		
+	</body>
+</html>
